@@ -15,7 +15,7 @@ int _selection_sort(int array[], int size)
         int min_index = i;
         for (int j = i + 1; j < size; j++)
         {
-            if (array[i] > array[j])
+            if (array[min_index] > array[j])
             {
                 min_index = j;
             }
