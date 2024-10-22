@@ -74,10 +74,30 @@ void _print_function_pointer()
     printf("Sum of function pointer: %d", sum);
 }
 
+
+// Constant to pointer
+void _constant_pointer()
+{
+    int var = 10;
+    const int *ptr = &var;
+    //*ptr = 20; error because it cannot modify the value which the address of variable was pointed.
+
+}
+
+
+// Pointer to constant
+void _pointer_to_constant()
+{
+    int var = 10;
+    int *const ptr = &var;
+    *ptr = 20;
+}
+
 int main()
 {
     //_integer_pointer();
     //_array_pointer();
     //_structure_pointer();
-    _print_function_pointer();
+    //_print_function_pointer();
+    _constant_pointer();
 }
